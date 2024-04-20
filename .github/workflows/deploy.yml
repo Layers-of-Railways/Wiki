@@ -46,7 +46,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: "pnpm i && pnpm ci || true"
+        run: "pnpm i"
       - name: Build production website
         env:
           # For maximum backward compatibility with Hugo modules
