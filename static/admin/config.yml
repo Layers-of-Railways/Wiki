@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: Layers-of-Railways/Wiki
+  open_authoring: true
+  branch: main
+publish_mode: editorial_workflow
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: 'help'
+    label: 'Help'
+    folder: 'content/help'
+    nested: { depth: 5 }
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Summary', name: 'summary', widget: 'string' }
+      - { label: 'Publishing Date', name: 'date', widget: 'datetime' }
+      - { label: 'Last modified Date', name: 'lastmod', widget: 'datetime' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
+      - {
+        label: 'Menu', name: 'menu', widget: 'object', required: false, collapsed: true,
+        fields: [
+          {
+            label: 'help', name: 'help', widget: 'object', required: false, collapsed: true,
+            fields: [
+              { label: 'Parent', name: 'parent', widget: 'string', required: false },
+              { label: 'Identifier', name: 'identifier', widget: 'string', required: false }
+            ]
+          }
+        ]
+      }
+      - { label: 'Weight', name: 'weight', widget: 'number', value_type: 'integer' }
+      - { label: 'toc', name: 'toc', widget: 'boolean', default: true, required: false }
+      - {
+        label: 'SEO', name: 'seo', widget: 'object', required: false, collapsed: true,
+        fields: [
+          { label: 'Title', name: 'title', widget: 'string' },
+          { label: 'Description', name: 'description', widget: 'string' },
+          { label: 'Canonical', name: 'canonical', widget: 'string' },
+          { label: 'noindex', name: 'noindex', widget: 'boolean', default: false }
+        ]
+      }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
