@@ -3,6 +3,7 @@ backend:
   repo: Layers-of-Railways/Wiki
   open_authoring: true
   branch: main
+  base_url: https://decapcms-auth.api.ithundxr.dev
 publish_mode: editorial_workflow
 media_folder: "static/img"
 public_folder: "/img"
