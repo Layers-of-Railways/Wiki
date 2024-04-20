@@ -1,12 +1,10 @@
 ---
-title: "Help"
+title: "Lorem"
 description: ""
 summary: ""
-date: 2024-04-18T21:33:50-04:00
-lastmod: 2024-04-18T21:33:50-04:00
-draft: true
-weight: 999
-toc: true
+date: 2024-04-20T13:31:39-04:00
+lastmod: 2024-04-20T13:31:39-04:00
+draft: false
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)

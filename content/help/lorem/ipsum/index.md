@@ -1,11 +1,12 @@
 ---
-title: "Privacy Policy"
+title: "Ipsum"
 description: ""
 summary: ""
-date: 2023-09-07T17:19:07+02:00
-lastmod: 2023-09-07T17:19:07+02:00
+date: 2024-04-20T13:31:39-04:00
+lastmod: 2024-04-20T13:31:39-04:00
 draft: false
-type: "legal"
+weight: 100
+toc: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
