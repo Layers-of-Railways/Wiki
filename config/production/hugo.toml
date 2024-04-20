@@ -1,4 +1,4 @@
 # Overrides for production environment
 
 baseurl = "https://wiki.railways.ithundxr.dev"
-canonifyURLs = true
+#canonifyURLs = true
