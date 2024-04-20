@@ -38,19 +38,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: "[[ -f pnpm-lock.yaml ]] && pnpm ci || true"
       - name: Build production website
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          npm run build \
+          pnpm run build \
             -- \
             --gc \
             --minify \
