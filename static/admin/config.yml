@@ -6,6 +6,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "static/img"
 public_folder: "/img"
+site_url: https://wiki.railways.ithundxr.dev
 
 collections:
   - name: 'help'
