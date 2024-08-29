@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      vue:
+        specifier: ^3.4.38
+        version: 3.4.38
     devDependencies:
       vitepress:
         specifier: ^1.3.4
